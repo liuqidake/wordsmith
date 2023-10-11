@@ -8,7 +8,7 @@ COPY dispatcher.go .
 # build for the target arch not the build platform host arch
 RUN GOOS=linux GOARCH=$TARGETARCH go build dispatcher.go
 
-# RUN test test
+# RUN test
 # defaults to using the target arch image
 FROM alpine
 
