@@ -7,7 +7,7 @@ lab.controller('LabCtrl', function ($scope, $http, $timeout) {
   $scope.noun2 = "";
   $scope.adjective1 = "";
   $scope.adjective2 = "";
-  $scope.verb = "";
+  $scope.verb = ""
 
   getWord($http, $timeout, '/words/noun?n=1', function(resp1) {
     $scope.noun1 = word(resp1);
