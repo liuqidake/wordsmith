@@ -8,7 +8,7 @@ RUN mvn verify -DskipTests --fail-never
 COPY src ./src
 RUN mvn verify
 
-# Run stage stage
+# Run stage 
 FROM --platform=${TARGETPLATFORM} amazoncorretto:17
 WORKDIR /app
 COPY --from=build /home/lab/target .
