@@ -9,6 +9,7 @@ The demo app runs across three containers:
 - **db** - a Postgres database that stores words
 
 ## Architecture
+## Architecture
 
 
 ![Architecture diagram](architecture.excalidraw.png)
